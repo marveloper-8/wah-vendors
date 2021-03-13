@@ -1,0 +1,317 @@
+.side-bar-open .side-bar{
+    background:#fff;
+    border-right:1px solid #D3DDE7;
+    padding:28px 32px;
+    display:grid;
+    grid-template-columns:1fr 5fr;
+    position:relative;
+    transition:.5s ease-in-out all;
+    .icons{
+        background:#fff;
+        margin-right:7.5px;
+        .head{
+            margin-bottom:95px;
+            .logo{
+                height:40px;
+            }
+        }
+        .list{
+            .item{
+                margin-bottom:48px;
+                img{
+                    height:32px;
+                }
+            }
+        }
+    }
+
+    .text{
+        position:relative;
+        transition:.5s ease-in-out all;
+        .head{
+            margin:10px 0 100px 0;
+            display:flex;
+            justify-content:space-between;
+            .logo{
+                height:19.5px;
+            }
+            .menu{
+                height:32px;
+                cursor:pointer;
+            }
+        }
+        .list{
+            .item{
+                margin-bottom:58px;
+                padding-left:32px;
+            }
+            .active{
+                font-weight:600;
+                color:#0C56E9;
+            }
+        }
+    }
+}
+
+
+.side-bar-close .side-bar{
+    background:#fff;
+    border-right:1px solid #D3DDE7;
+    padding:28px 32px;
+    display:grid;
+    grid-template-columns:1fr;
+    position:relative;
+    transition:.5s ease-in-out all;
+    .icons{
+        margin-right:7.5px;
+        .head{
+            margin-bottom:95px;
+            .logo{
+                height:40px;
+            }
+        }
+        .list{
+            .item{
+                margin-bottom:48px;
+                img{
+                    height:32px;
+                }
+            }
+        }
+    }
+
+    .text{
+        left:-200px;
+        top:30px;
+        position:absolute;
+        transition:.5s ease-in-out all;
+        .head{
+            margin:10px 0 111px 0;
+            display:flex;
+            justify-content:space-between;
+            .logo{
+                height:19.5px;
+            }
+            .menu{
+                height:32px;
+                position:relative;
+                left:180px;
+                top:-10px;
+                cursor:pointer;
+            }
+        }
+        .list{
+            .item{
+                margin-bottom:58px;
+                padding-left:32px;
+            }
+        }
+    }
+}
+
+.navigation{
+    padding:21px 32px 21px 80px;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    border-bottom:1px solid #D3DDE7;
+    .name{
+        font-weight:600;
+        font-size:24px;
+        position:relative;
+        top:10px;
+    }
+    .notification{
+        height:48px;
+    }
+    .image{
+        width:48px;
+        height:48px;
+        border-radius:48px;
+        background:grey;
+        display:inline-block;
+        margin:0 16px 0 24px;
+        border: 2px solid #729FF8;
+    }
+    .username{
+        font-weight:600;
+        display:inline-block;
+        position:relative;
+        top:-20px;
+    }
+}
+
+.nav-mobile{
+    display:none;
+}
+
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+
+/* tablet portrait */
+@media screen and (max-width:1024px){
+    .side-bar-close .side-bar, .side-bar-open .side-bar{
+        background:#fff;
+        border-right:1px solid #D3DDE7;
+        padding:28px 32px;
+        display:grid;
+        grid-template-columns:1fr;
+        position:relative;
+        transition:.5s ease-in-out all;
+        .icons{
+            margin-right:7.5px;
+            .head{
+                margin-bottom:95px;
+                .logo{
+                    height:40px;
+                }
+            }
+            .list{
+                .item{
+                    margin-bottom:48px;
+                    img{
+                        height:32px;
+                    }
+                }
+            }
+        }
+    
+        .text{display:none!important;}
+    }
+
+    .navigation{
+        padding:21px 40px;
+        background:#fff;
+        display:flex;
+        justify-content:space-between;
+        border-bottom:1px solid #D3DDE7;
+        .name{
+            font-weight:600;
+            font-size:24px;
+            position:relative;
+            top:10px;
+        }
+        .notification{
+            height:48px;
+        }
+        .image{
+            width:48px;
+            height:48px;
+            border-radius:48px;
+            background:grey;
+            display:inline-block;
+            margin:0 16px 0 24px;
+            border: 2px solid #729FF8;
+        }
+        .username{
+            font-weight:600;
+            display:inline-block;
+            position:relative;
+            top:-20px;
+        }
+    }
+    
+    .nav-mobile{
+        display:none;
+    }
+}
+
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+
+/* mobile */
+@media screen and (max-width:426px){
+    .nav-desktop, .side-bar{display:none!important;}
+    .nav-mobile{display:block;}
+    .navigation{
+        padding:0;
+        .top,.bottom{
+            display:flex;
+            justify-content:space-between;
+            border-bottom:1px solid #D3DDE7;
+            padding:15px 25px;
+        }
+        img{
+            height:25px;
+        }
+        .image{
+            width:25px;
+            height:25px;
+            border-radius:25px;
+            margin:0 0 0 10px;
+        }
+        .username{
+            display:inline-block;
+            position:relative;
+            top:-10px;
+        }
+    } 
+
+    .navigation-container{
+        position:fixed;
+        top:0;
+        left:0;
+        height:100vh;
+        z-index:10;
+        background:#fff;
+        display:block;
+        padding:20px 0;
+        font-size:18px;
+        width:100vw;
+        transition:.5s ease-in-out all;
+        .close{
+            color:red;
+            text-align:right;
+            font-size:30px;
+            padding-right:30px;
+            margin-bottom:30px;
+        }
+        .logo{
+            margin-bottom:50px;
+            padding:0 30px 10px 30px;
+            img{
+                width:200px;
+            }
+        }
+        .item{
+            padding:20px 0;
+            border-top:1px rgb(214, 214, 214) solid;
+            width:82.5%;
+            margin:auto;
+            font-size:16px;
+            img{
+                height:20px;
+            }
+            span{
+                margin-left:20px;
+                position:relative;
+                top:-5px;
+                display:inline-block;
+            }
+            .active{
+                font-weight:600;
+                color:#0C56E9;
+            }
+        }
+    }
+    .navigation-container-close{
+        left:-100vw;
+        transition:.5s ease-in-out all;
+    }
+}

@@ -1,0 +1,137 @@
+.authentication{
+    display:grid;
+    grid-template-columns:1fr .8fr;
+    min-height:100vh;
+    form{
+        padding:47px 231px 137px 70px;
+        .head{
+            margin-bottom:48px;
+            .logo{
+                width:73px;
+            }
+            h4{
+                margin:25px 0 16px 0;
+            }
+        }
+
+        .input-container{
+            margin-bottom:15px;
+            .double-item{
+                display:flex;
+                justify-content:space-between;
+            }
+        }
+
+        .note{
+            margin-bottom:18px;
+        }
+        .note-2{
+            margin-top:24px;
+            text-align:center;
+        }
+    }
+
+
+    .aesthetics{
+        padding:56px 51px;
+        text-align:right;
+        button{
+            font-size:16px;
+        }
+    }
+}
+
+
+
+.account-pending{
+    padding:114px 505px;
+    text-align:center;
+    .image{
+        background:#F0F5FF;
+        margin-bottom:48px;
+        width:286px;
+        height:286px;
+        border-radius:286px;
+        display:inline-block;
+    }
+    .font-16{
+        margin:16px 0 48px 0;
+    }
+}
+
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+
+/* tablet portrait */
+@media screen and (max-width:1024px){
+    .authentication{
+        display:grid;
+        grid-template-columns:1fr .6fr;
+        min-height:100vh;
+        form{
+            padding:47px 40px 137px 40px;
+        }
+    
+    
+        .aesthetics{
+            padding:56px 30px;
+        }
+    }
+
+    .account-pending{
+        padding:114px 250px;
+        text-align:center;
+    }
+}
+
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+
+/* mobile */
+@media screen and (max-width:426px){
+    .authentication{
+        display:grid;
+        grid-template-columns:1fr;
+        min-height:100vh;
+        form{
+            padding:47px 30px;
+
+            .input-container{
+                margin-bottom:15px;
+                .double-item{
+                    display:block;
+                }
+            }
+        }
+    
+    
+        .aesthetics{
+            padding:56px 30px;
+            background-image:none!important;
+            background-color:#0C56E9;
+            text-align:center;
+            border-top: 1px solid #D3DDE7;
+        }
+    }
+
+    .account-pending{
+        padding:75px 30px;
+        text-align:center;
+    }
+}

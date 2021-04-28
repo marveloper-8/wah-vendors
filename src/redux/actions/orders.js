@@ -1,0 +1,2 @@
+export const ORDERS_HISTORY = 'ORDERS_HISTORY'
+export const ORDERS_INVOICE = 'ORDERS_INVOICE'

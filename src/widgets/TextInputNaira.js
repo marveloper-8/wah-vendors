@@ -2,13 +2,19 @@ import React from 'react'
 // styles
 import './style/input.scss'
 
-const TextInputNaira = ({placeholder, type, styling}) => {
-    return <div className="text-input-naira">
-            ₦ <input 
-                type={type}
-                className={styling}
-                placeholder={placeholder}
-            ></input>
+const TextInputNaira = e => {
+    return <div className={`text-input ${e.styling}`}>
+            <div className="label" style={{fontSize: `${e.label_size}px`}}>{e.label}</div>
+            <div className="text-input-naira">
+                ₦ <input 
+                    type={e.type}
+                    className={e.styling}
+                    placeholder={e.placeholder}
+                    value={e.value}
+                    onChange={e.onChange}
+                    name={e.name}
+                ></input>
+            </div>
         </div>
 }
 

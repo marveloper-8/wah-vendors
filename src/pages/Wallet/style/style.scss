@@ -1,0 +1,185 @@
+.wallet{
+    section{
+        width:75%;
+        .wallet-container{
+            padding:32px;
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            .balance{
+                padding:25px 32px 32px 32px;
+                background: #286BF0;
+                color:#fff;
+                border: 0.5px solid #D3DDE7;
+                box-sizing: border-box;
+                border-radius: 4px;
+            }
+            .action{
+                padding:31px 32px;
+            }
+        }
+        .item-head{
+            padding:18px 32px;
+        }
+        .item-head-two{
+            padding:0 24px;
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            .inner{
+                display:flex;
+                justify-content:space-between;
+                span{
+                    padding:20px 15px 16px 15px;
+                    border-bottom:2px #fff solid;
+                }
+                span.active{
+                    border-bottom:2px solid #0C56E9;
+                    color:#0C56E9;
+                }
+            }
+        }
+        .item{
+            padding:16px 32px;
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            border-top: 0.5px solid #D3DDE7;
+            font-size:16px;
+            .info{
+                display:grid;
+                grid-template-columns:1fr 9fr;
+                img{
+                    display:inline-block;
+                    width:40px;
+                }
+                .text{
+                    margin-left:16px;
+                    display:inline-block;
+                    .date{
+                        font-size:12px;
+                        color:#607080;
+                        margin-top:4px;
+                    }
+                    .account-number{
+                        font-size:14px;
+                        color:#607080;
+                        margin-top:4px;
+                    }
+                }
+            }
+            .right{
+                text-align:right;
+            }
+        }
+        .view{
+            text-align:center;
+            padding:16px;
+            border-top: 0.5px solid #D3DDE7;
+            font-size:16px;
+            color:#0C56E9;
+        }
+    }
+
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    
+    /* tablet portrait */
+    @media screen and (max-width:1024px){
+    }
+
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    
+    /* mobile portrait */
+    @media screen and (max-width:426px){
+        section{
+            width:100%;
+            .wallet-container{
+                padding:20px;
+                grid-template-columns:1fr;
+                .balance{
+                    padding:15px 20px 20px 20px;
+                }
+                .action{
+                    margin-top:15px;
+                    padding:0;
+                }
+            }
+            .item-head{
+                padding:18px 20px;
+            }
+            .item-head-two{
+                padding:0 20px;
+                grid-template-columns:1fr;
+                .inner{
+                    display:flex;
+                    justify-content:space-between;
+                    span{
+                        padding:20px 15px 16px 15px;
+                        border-bottom:2px #fff solid;
+                        cursor:pointer;
+                    }
+                    span:hover{
+                        border-bottom:2px solid #0C56E9;
+                        color:#0C56E9;
+                    }
+                    span.active{
+                        border-bottom:2px solid #0C56E9;
+                        color:#0C56E9;
+                    }
+                }
+            }
+            .item{
+                padding:16px 20px;
+                display:grid;
+                grid-template-columns:1fr;
+                border-top: 0.5px solid #D3DDE7;
+                font-size:16px;
+                .info{
+                    display:grid;
+                    grid-template-columns:1fr 4fr;
+                    img{
+                        display:inline-block;
+                        width:40px;
+                    }
+                    .text{
+                        margin-left:0;
+                        display:inline-block;
+                        .date{
+                            font-size:12px;
+                            color:#607080;
+                            margin-top:4px;
+                        }
+                    }
+                }
+                .right{
+                    margin-top:15px;
+                    text-align:left;
+                    display:grid;
+                    grid-template-columns:1fr 4fr;
+                }
+            }
+            .view{
+                text-align:center;
+                padding:16px;
+                border-top: 0.5px solid #D3DDE7;
+                font-size:16px;
+                color:#0C56E9;
+            }
+        }    
+    }
+}

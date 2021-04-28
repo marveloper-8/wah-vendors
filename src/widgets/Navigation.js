@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
 // styling
 import './style/navigation.scss'
+// widgets
+import ModalProfile from './ModalProfile'
 // icons
 import notification from '../icons/notification.svg'
 import logo from '../icons/logo.svg'
@@ -21,6 +23,7 @@ import wallet_active from '../icons/wallet-active.svg'
 import reports_active from '../icons/reports-active.svg'
 
 const Navigation = e => {
+    const [profile, setProfile] = useState(false)
     const [menu_container, openMenu] = useState(false)
     const [icon, setIcon] = useState(dashboard_active)
 
@@ -45,8 +48,8 @@ const Navigation = e => {
 
                 <div>
                     <img src={notification} className="notification" alt="notification" />
-                    <div className="image"></div>
-                    <div className="username">Afrities Waters</div>
+                    <div className="image" onClick={() => setProfile(!profile)}></div>
+                    <div className="username" onClick={() => setProfile(!profile)}>Afrities Waters</div>
                 </div>
             </div>
 
@@ -54,7 +57,7 @@ const Navigation = e => {
                 <div className="top">
                     <img src={icon} alt="dashboard" />
 
-                    <div>
+                    <div onClick={() => setProfile(!profile)}>
                         <div className="username font-16">Afrities Waters</div>
                         <div className="image"></div>
                     </div>
@@ -108,51 +111,62 @@ const Navigation = e => {
                     </Link>
                 </div>
                 <div className="item">
-                    <img 
-                        src={
-                            e.active === "products" 
-                            ? products_active
-                            : products
-                        } 
-                        alt="products" 
-                    />
-                    <span className={
-                        e.active === "products"
-                        ? "active"
-                        : ""
-                    }>Products</span>
+                    <Link className="link" to="/products">
+                        <img 
+                            src={
+                                e.active === "products" 
+                                ? products_active
+                                : products
+                            } 
+                            alt="products" 
+                        />
+                        <span className={
+                            e.active === "products"
+                            ? "active"
+                            : ""
+                        }>Products</span>
+                    </Link>
                 </div>
                 <div className="item">
-                    <img 
-                        src={
-                            e.active === "wallet" 
-                            ? wallet_active
-                            : wallet
-                        } 
-                        alt="wallet" 
-                    />
-                    <span className={
-                        e.active === "wallet"
-                        ? "active"
-                        : ""
-                    }>Wallet</span>
+                    <Link className="link" to="/wallet">
+                        <img 
+                            src={
+                                e.active === "wallet" 
+                                ? wallet_active
+                                : wallet
+                            } 
+                            alt="wallet" 
+                        />
+                        <span className={
+                            e.active === "wallet"
+                            ? "active"
+                            : ""
+                        }>Wallet</span>
+                    </Link>
                 </div>
                 <div className="item">
-                    <img 
-                        src={
-                            e.active === "reports" 
-                            ? reports_active
-                            : reports
-                        } 
-                        alt="reports" 
-                    />
-                    <span className={
-                        e.active === "reports"
-                        ? "active"
-                        : ""
-                    }>Reports</span>
+                    <Link className="link" to="/reports">
+                        <img 
+                            src={
+                                e.active === "reports" 
+                                ? reports_active
+                                : reports
+                            } 
+                            alt="reports" 
+                        />
+                        <span className={
+                            e.active === "reports"
+                            ? "active"
+                            : ""
+                        }>Reports</span>
+                    </Link>
                 </div>
             </div>
+            <ModalProfile
+                open={profile}
+                close={() => setProfile(!profile)}
+                active={e.active}
+            />
         </>
     )
 }

@@ -52,34 +52,40 @@ const SideBar = e => {
                     </Link>
                 </div>
                 <div className="item">
-                    <img 
-                        src={
-                            e.active === "products" 
-                            ? products_active
-                            : products
-                        } 
-                        alt="products" 
-                    />
+                    <Link className="link" to="/products">
+                        <img 
+                            src={
+                                e.active === "products" 
+                                ? products_active
+                                : products
+                            } 
+                            alt="products" 
+                        />
+                    </Link>
                 </div>
                 <div className="item">
-                    <img 
-                        src={
-                            e.active === "wallet" 
-                            ? wallet_active
-                            : wallet
-                        } 
-                        alt="wallet" 
-                    />
+                    <Link className="link" to="/wallet">
+                        <img 
+                            src={
+                                e.active === "wallet" 
+                                ? wallet_active
+                                : wallet
+                            } 
+                            alt="wallet" 
+                        />
+                    </Link>
                 </div>
                 <div className="item">
-                    <img 
-                        src={
-                            e.active === "reports" 
-                            ? reports_active
-                            : reports
-                        } 
-                        alt="reports" 
-                    />
+                    <Link className="link" to="/reports">
+                        <img 
+                            src={
+                                e.active === "reports" 
+                                ? reports_active
+                                : reports
+                            } 
+                            alt="reports" 
+                        />
+                    </Link>
                 </div>
             </div>
         </div>
@@ -109,23 +115,29 @@ const SideBar = e => {
                     }>Requests</div>
                 </Link>
 
-                <div className={
-                    e.active === "products"
-                    ? "item active"
-                    : "item"
-                }>Products</div>
+                <Link className="link" to="/products">
+                    <div className={
+                        e.active === "products"
+                        ? "item active"
+                        : "item"
+                    }>Products</div>
+                </Link>
                 
-                <div className={
-                    e.active === "wallet"
-                    ? "item active"
-                    : "item"
-                }>Wallet</div>
+                <Link className="link" to="/wallet">
+                    <div className={
+                        e.active === "wallet"
+                        ? "item active"
+                        : "item"
+                    }>Wallet</div>
+                </Link>
                 
-                <div className={
-                    e.active === "reports"
-                    ? "item active"
-                    : "item"
-                }>Reports</div>
+                <Link className="link" to="/reports">
+                    <div className={
+                        e.active === "reports"
+                        ? "item active"
+                        : "item"
+                    }>Reports</div>
+                </Link>
             </div>
         </div>
     </div>

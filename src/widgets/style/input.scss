@@ -6,7 +6,15 @@
         color:#607080;
     }
     input{
-        border: 1px solid #729FF8;
+        border: 1px solid #607080;
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding:15px;
+        width:100%;
+    }
+    textarea{
+        height:168px;
+        border: 1px solid #607080;
         box-sizing: border-box;
         border-radius: 4px;
         padding:15px;
@@ -16,7 +24,7 @@
 
 .text-input-double{
     display:inline-block;
-    width:47.5%;
+    width:49%;
     input{
         width:100%;
     }
@@ -24,18 +32,19 @@
 
 /* text input naira */
 .text-input-naira{
-    padding:8px 16px;
-    border: 1px solid #729FF8;
+    padding:15px;
+    border: 1px solid #607080;
     box-sizing: border-box;
     border-radius: 4px;
     display:inline-block;
-    width:47.5%;
+    width:100%;
     font-size:14px;
     color:#607080;
     input{
         border:none;
         display:inline-block;
         width:75%;
+        padding:0;
     }
 }
 

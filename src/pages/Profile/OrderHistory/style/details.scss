@@ -1,0 +1,131 @@
+.history{
+    section.details{
+        width:69%;
+        padding:24px 32px;
+        .text{
+            width:55%;
+        }
+        .head{
+            margin-bottom:18px;
+            padding-bottom:24px;
+            border-bottom: 0.5px solid #94A3B3;
+        }
+    }
+    section.orders{
+        .item{
+            margin-bottom:24px;
+            color:#364B63;
+            display:flex;
+            justify-content:space-between;
+        }
+        .total{
+            margin-top:8px;
+            display:flex;
+            justify-content:space-between;
+        }
+    }
+    section.info{
+        width:75%;
+        padding:0;
+        .top{
+            padding:32px 56px;
+            border-bottom: 0.5px solid #94A3B3;
+            display:grid;
+            grid-template-columns:1fr 3fr;
+            .image{
+                width:178px;
+                height:191px;
+                background:grey;
+                border-radius:4px;
+            }
+            .right-section{
+                margin-left:16px;
+                .text{
+                    width:60%;
+                    margin-bottom:40px;
+                    .semi-bold{
+                        margin-bottom:8px;
+                    }
+                }
+                button{
+                    margin-right:24px;
+                }
+            }
+        }
+        .bottom{
+            padding:32px 56px;
+            .item{
+                display:flex;
+                justify-content:space-between;
+                margin-bottom:18px;
+                .label{
+                    color:#607080;
+                }
+                img{
+                    height:24px;
+                    position:relative;
+                    top:5px;
+                    margin-right:19px;
+                }
+            }
+        }
+    }
+
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    
+    /* tablet portrait */
+    @media screen and (max-width:1024px){
+        section.details, section.info{
+            width:auto;
+            .text{
+                width:100%;
+            }
+        }
+    }
+
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    
+    /* mobile portrait */
+    @media screen and (max-width:426px){
+        section.details, section.info{
+            width:auto;
+            padding:24px 20px;
+            .text{width:100%!important; margin:0;}
+            .right-section{margin:0!important}
+            .bottom, .top{
+                display:grid;
+                grid-template-columns:1fr;
+                padding:24px 0;
+            }
+            .image{
+                width:100%!important;
+                height:300px!important;
+                margin-bottom:10px;
+            }
+            button{
+                margin:0 0 10px 0;
+            }
+        }
+        section.info{
+            padding:0 20px;
+        }
+    }
+}

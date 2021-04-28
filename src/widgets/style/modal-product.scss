@@ -1,0 +1,140 @@
+.modal-product-container{
+    position:fixed;
+    top:-100vh;
+    left:0;
+    width:100vw;
+    height:100vh;
+    min-height:100vh;
+    padding-bottom:150px!important;
+    margin-bottom:150px!important;
+    transition:.5s ease-in-out all;
+    .background{
+        background:rgba(0,0,0,.5);
+        position:fixed;
+        top:-100vh;
+        left:0;
+        width:100vw;
+        height:100vh;
+        z-index:100;
+        transition:.5s ease-in-out all;
+    }
+    .modal-product-space-bottom{
+        padding-bottom:150px;
+    }
+    .modal-product-content{
+        width:50%;
+        margin:150px auto;
+        background:#fff;
+        border-radius:4px;
+        padding:32px;
+        position:relative;
+        z-index:1000;
+        bottom:-200vh;
+        transition:.5s ease-in-out all;
+        .head{
+            display:flex;
+            justify-content: space-between;
+            margin:0 0 18px 0;
+            padding-bottom:16px;
+            border-bottom: 0.5px solid #94A3B3;
+            img{
+                cursor:pointer;
+            }
+        }
+        .image{
+            padding:65px 16px;
+            background:grey;
+            color:#fff;
+            display:inline-block;
+            width:155px;
+            height:100px;
+            text-align:center;
+            margin-bottom:24px;
+            border-radius:4px;
+        }
+        .double-item{
+            display:flex;
+            justify-content: space-between;
+        }
+        .button-container{
+            display:flex;
+            justify-content: space-between;
+            margin-top:16px;
+        }
+    }
+}
+
+.modal-product-container-open{
+    transition:.5s ease-in-out all;
+    position:absolute;
+    top:0;
+    padding-bottom:150px;
+    margin-bottom:150px;
+    .background{
+        top:0;
+        transition:.5s ease-in-out all;
+    }
+    .modal-product-content{
+        bottom:0;
+        transition:.5s ease-in-out all;
+        margin-bottom:150px;
+    }
+}
+
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+
+/* tablet portrait */
+@media screen and (max-width:1024px){
+    .modal-product-container{
+        .modal-product-content{
+            width:60%;
+            padding:25px;
+        }
+    }
+}
+
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+
+/* mobile portrait */
+@media screen and (max-width:426px){
+    .modal-product-container{
+        .modal-product-content{
+            width:80%;
+            padding:20px;
+            margin:50px auto;
+            .list-container{
+                overflow-x:scroll;
+                .list{
+                    width:300px;
+                }
+            }
+            .image{
+                width:80%;
+            }
+            .double-item{
+                display:block;
+            }
+            .button-container{
+                display:block;
+            }
+        }
+    }
+}

@@ -21,6 +21,13 @@ button{
     border-radius:4px;
 }
 
+.button-icon{
+    img{
+        width:15px;
+        margin:0 0 0 32px;
+    }
+}
+
 .button-icon-two{
     padding:7px 8px;
     img{
@@ -31,6 +38,22 @@ button{
 
 .button-three{
     padding:9px 24px;
+    border-radius:4px;
+}
+
+.button-four{
+    padding:4px 16px;
+    border-radius:4px;
+}
+
+.button-five{
+    padding:17px 66.5px;
+    border-radius:4px;
+    margin-bottom:10px;
+}
+
+.button-six{
+    padding:6px 16px;
     border-radius:4px;
 }
 
@@ -51,6 +74,17 @@ button{
         width:100%;
     }
     .button-three{
+        width:100%;
+    }
+    .button-icon{
+        width:100%;
+        img{
+            width:15px;
+            margin:0 0 0 10px;
+        }
+    }
+
+    .button-five{
         width:100%;
     }
 }

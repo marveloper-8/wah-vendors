@@ -1,6 +1,6 @@
 import React from 'react'
 // styling
-import './style.scss'
+import './style/style.scss'
 // widgets
 import SideBar from '../../widgets/SideBar'
 import Navigation from '../../widgets/Navigation'

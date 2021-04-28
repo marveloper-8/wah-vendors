@@ -1,24 +1,27 @@
 import React from 'react'
 // styles
-import './style/select.css'
+import './style/select.scss'
 
-const SelectInput = ({options, label, styling, border, label_size}) => {
-    return <div className={`select-input-two ${styling}`}>
-                <div className="label" style={{fontSize: `${label_size}px`}}>{label}</div>
-                <select className={border}>
-                    {
-                        options.map(item => {
-                            return (
-                                <option 
-                                    key={item.value} 
-                                    value={item.value}
-                                >
-                                    {item.name}
-                                </option>
-                            )
-                        })
-                    }
-                </select>
+const SelectInput = e => {
+    return <div className={`select-input-two ${e.styling}`}>
+                <div className="label" style={{fontSize: `${e.label_size}px`}}>{e.label}</div>
+                <select 
+                    className={e.border}
+                    value={e.value}
+                    onChange={e.onChange}
+                    name={e.name}
+                >{
+                    e.options.map(item => {
+                        return (
+                            <option 
+                                key={item.value} 
+                                value={item.value}
+                            >
+                                {item.name}
+                            </option>
+                        )
+                    })
+                }</select>
             </div>
 }
 

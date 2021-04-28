@@ -1,6 +1,6 @@
 import React from 'react'
 // styles
-import './style/select.css'
+import './style/select.scss'
 
 const SelectInput = ({options, label, styling, border}) => {
     return <div className={`select-input select-input-double ${styling}`}>

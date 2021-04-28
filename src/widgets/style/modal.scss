@@ -1,0 +1,149 @@
+.modal-container{
+    position:fixed;
+    top:-100vh;
+    left:0;
+    width:100vw;
+    height:100vh;
+    transition:.5s ease-in-out all;
+    .background{
+        background:rgba(0,0,0,.5);
+        position:fixed;
+        top:-100vh;
+        left:0;
+        width:100vw;
+        height:100vh;
+        z-index:100;
+        transition:.5s ease-in-out all;
+    }
+    .modal-content{
+        width:35%;
+        margin:150px auto;
+        background:#fff;
+        border-radius:4px;
+        padding:32px;
+        position:relative;
+        z-index:1000;
+        bottom:-200vh;
+        transition:.5s ease-in-out all;
+        .head{
+            display:flex;
+            justify-content: space-between;
+            margin:0 20px 32px 0;
+            img{
+                cursor:pointer;
+            }
+        }
+        .text{
+            margin-bottom:32px;
+        }
+        .list{
+            display:flex;
+            justify-content:space-between;
+            margin-bottom:40px;
+        }
+    }
+    .modal-content-two{
+        width:25%;
+        margin:150px auto;
+        background:#fff;
+        border-radius:4px;
+        padding:32px;
+        position:relative;
+        z-index:1000;
+        bottom:-200vh;
+        transition:.5s ease-in-out all;
+        .head{
+            display:flex;
+            justify-content: space-between;
+            margin:0 20px 32px 0;
+            img{
+                cursor:pointer;
+            }
+        }
+        .text{
+            margin-bottom:32px;
+        }
+        .button-container{
+            text-align:right;
+        }
+    }
+}
+
+.modal-container-open{
+    transition:.5s ease-in-out all;
+    top:0;
+    .background{
+        top:0;
+        transition:.5s ease-in-out all;
+    }
+    .modal-content{
+        bottom:0;
+        transition:.5s ease-in-out all;
+    }
+    .modal-content-two{
+        bottom:0;
+        transition:.5s ease-in-out all;
+    }
+}
+
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+
+/* tablet portrait */
+@media screen and (max-width:1024px){
+    .modal-container{
+        .modal-content{
+            width:40%;
+            padding:25px;
+        }
+        .modal-content-two{
+            width:40%;
+            padding:25px;
+        }
+    }
+}
+
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+
+/* mobile portrait */
+@media screen and (max-width:426px){
+    .modal-container{
+        .modal-content{
+            width:80%;
+            padding:20px;
+            .list-container{
+                overflow-x:scroll;
+                .list{
+                    width:300px;
+                }
+            }
+        }
+        .modal-content-two{
+            width:80%;
+            padding:20px;
+            .list-container{
+                overflow-x:scroll;
+                .list{
+                    width:300px;
+                }
+            }
+        }
+    }
+}

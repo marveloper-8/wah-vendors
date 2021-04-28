@@ -1,0 +1,98 @@
+.wallet{
+    section.withdraw{
+        width:50%;
+        .inactive{
+            opacity:.25;
+        }
+        .head{
+            padding:16px 100px 16px 32px;
+            .font-16{
+                color:#364B63;
+            }
+        }
+        .button-container{
+            margin-top:26px;
+        }
+        .inner-container{
+            padding:18px 43px 56px 43px;
+            border-top: 0.5px solid #D3DDE7;
+        }
+        .inner-container-two{
+            padding:18px 43px 56px 43px;
+            border-top: 0.5px solid #D3DDE7;
+            .font-16{
+                margin-bottom:22px;
+            }
+            .button-container{
+                margin-top:25px;
+            }
+            .button-container-two{
+                margin-top:25px;
+                padding:14px 10px 0 10px;
+            }
+        }
+    }
+
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    
+    /* tablet portrait */
+    @media screen and (max-width:1024px){
+        section.withdraw{
+            width:70%;
+        }
+    }
+
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    /* break */
+    
+    /* mobile portrait */
+    @media screen and (max-width:426px){
+        section.withdraw{
+            width:100%;
+            .head{
+                padding:16px 20px;
+                .font-16{
+                    color:#364B63;
+                }
+            }
+            .button-container{
+                margin-top:26px;
+            }
+            .inner-container{
+                padding:18px 20px 56px 20px;
+                border-top: 0.5px solid #D3DDE7;
+            }
+            .inner-container-two{
+                padding:18px 20px 56px 20px;
+                border-top: 0.5px solid #D3DDE7;
+                .font-16{
+                    margin-bottom:22px;
+                }
+                .button-container{
+                    margin-top:25px;
+                }
+                .button-container-two{
+                    margin-top:25px;
+                    padding:0;
+                }
+            }
+        }
+    }
+}
